@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist1/
+coverage/
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+.github/docs/TODO.md
+.github/docs/TODO.md.bak
+contribot.state.*.json
+transcripts/
