@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 import { parseSource } from "../src/parse.ts";
 import { walkAst } from "../src/walk.ts";
 import type { Rule, Diagnostic, RuleContext, LintConfig } from "../src/types.ts";

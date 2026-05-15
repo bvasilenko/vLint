@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import type { Rule as VLintRule, Diagnostic, RuleContext } from "../types.ts";
 import { resolveConfig } from "../config.ts";

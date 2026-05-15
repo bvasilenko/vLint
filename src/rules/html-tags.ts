@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 export const HTML_TAGS: ReadonlySet<string> = new Set([
   "a", "abbr", "address", "area", "article", "aside", "audio",

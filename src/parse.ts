@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import { parse as babelParse } from "@babel/parser";
 import type { File } from "@babel/types";

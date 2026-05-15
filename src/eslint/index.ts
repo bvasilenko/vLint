@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import { rules as vlintRules } from "../rules/index.ts";
 import { adaptRule } from "./adapter.ts";

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import _traverse from "@babel/traverse";
 import type { File } from "@babel/types";

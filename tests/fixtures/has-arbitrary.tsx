@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 import { Box } from "@booga/vDsl";
 
 export function ArbitraryClass() {

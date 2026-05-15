@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 import { describe, it, expect } from "vitest";
 import { noArbitraryClass } from "../src/rules/no-arbitrary-class.ts";
 import { expectRuleFinds, expectRuleClean } from "./helpers.ts";

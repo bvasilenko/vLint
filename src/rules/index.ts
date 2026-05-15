@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import type { Rule } from "../types.ts";
 import { noRawClassname } from "./no-raw-classname.ts";

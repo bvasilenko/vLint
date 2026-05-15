@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 import { describe, it, expect } from "vitest";
 import { RuleTester } from "eslint";
 import { eslintPlugin } from "../src/eslint/index.ts";

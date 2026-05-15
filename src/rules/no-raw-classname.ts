@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 
 import type { JSXOpeningElement } from "@babel/types";
 import type { Rule, Diagnostic, RuleContext } from "../types.ts";

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 bvasilenko
 import { describe, it, expect } from "vitest";
 import { noRawStyle } from "../src/rules/no-raw-style.ts";
 import { expectRuleFinds, expectRuleClean } from "./helpers.ts";
