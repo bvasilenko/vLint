@@ -60,6 +60,20 @@ describe("lint()", () => {
       expect(withOff.diagnostics.some(d => d.ruleId === "no-raw-classname")).toBe(false);
     });
 
+
+    it("respects tokenProps option — props absent from the set are not validated", () => {
+      const withDefault = lint(`${FIXTURES}/has-invalid-token.tsx`, {
+        tokenScale: [0, 1, 2, 3, 4, 6, 8],
+      });
+      const withCustomProps = lint(`${FIXTURES}/has-invalid-token.tsx`, {
+        tokenScale: [0, 1, 2, 3, 4, 6, 8],
+        tokenProps: ["m"],
+      });
+
+      expect(withDefault.diagnostics.some(d => d.ruleId === "valid-token-values")).toBe(true);
+      expect(withCustomProps.diagnostics.some(d => d.ruleId === "valid-token-values")).toBe(false);
+    });
+
     it("overriding a rule severity changes the severity in returned diagnostics", () => {
       const result = lint(`${FIXTURES}/has-invalid-token.tsx`, {
         tokenScale: [0, 1, 2, 3, 4, 6, 8],

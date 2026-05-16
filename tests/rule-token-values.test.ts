@@ -26,7 +26,7 @@ describe("valid-token-values", () => {
       expectRuleFinds(validTokenValues, `<Box p={5} m={7} />`, 2, SCALE);
     });
 
-    it("all responsive-style shorthand props (px, py, mx, my, gap, …) are covered", () => {
+    it("all responsive-style shorthand props (px, py, mx, my, gap, ...) are covered", () => {
       expectRuleFinds(validTokenValues, `<Box px={5} py={5} />`, 2, SCALE);
     });
 
@@ -78,6 +78,14 @@ describe("valid-token-values", () => {
 
     it("empty string value — JS coerces to 0, which is in scale, so clean", () => {
       expectRuleClean(validTokenValues, `<Box p="" />`, SCALE);
+    });
+
+    it("a token prop absent from a custom tokenProps set is not validated, even when off-scale", () => {
+      expectRuleClean(validTokenValues, `<Box m={5} />`, { ...SCALE, tokenProps: ["p"] });
+    });
+
+    it("only props listed in a custom tokenProps set are validated — unrelated props pass through", () => {
+      expectRuleClean(validTokenValues, `<Box p={4} m={5} />`, { ...SCALE, tokenProps: ["p"] });
     });
   });
 
