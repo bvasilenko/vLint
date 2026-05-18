@@ -34,7 +34,7 @@ jobs:
       - name: setup-bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.1.x
+          bun-version: 1.2.x
           # actions/cache@v4 post-cleanup hangs on self-hosted; disable.
           no-cache: true
 
@@ -75,7 +75,7 @@ jobs:
       - name: setup-bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.1.x
+          bun-version: 1.2.x
           no-cache: true
 
       - name: install
